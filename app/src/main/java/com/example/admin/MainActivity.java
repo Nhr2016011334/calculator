@@ -105,7 +105,7 @@ public class MainActivity extends Activity {
         btn7.setOnClickListener(listener);
         btn8.setOnClickListener(listener);
         btn9.setOnClickListener(listener);
-        
+        //执行运算
         btnadd.setOnClickListener(listener);
         btnsubtract.setOnClickListener(listener);
         btnmultiply.setOnClickListener(listener);
