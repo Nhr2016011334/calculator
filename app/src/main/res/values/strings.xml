@@ -20,9 +20,9 @@
     <string name="shuru">请按数字键盘输入数字</string>
     <string name="shuchu">计算器输出结果</string>
     <string name="dot">.</string>
-    <string name="write">写入</string>
-    <string name="read">读取</string>
+    <!--<string name="write">写入</string>-->
+    <!--<string name="read">读取</string>-->
     <string name="resultText">计算式</string>
-    <string name="appendBox">追加模式</string>
+    <!--<string name="appendBox">追加模式</string>-->
 
 </resources>
