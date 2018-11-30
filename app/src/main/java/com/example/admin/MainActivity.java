@@ -42,12 +42,12 @@ public class MainActivity extends Activity {
     private EditText errorzero = null;
 
     private EditText resultText = null;
-    private Button writeButton = null;
-    private Button readButton = null;
-    private CheckBox appendBox = null;
+//    private Button writeButton = null;
+//    private Button readButton = null;
+//    private CheckBox appendBox = null;
     private EditText textView = null;
     private EditText displayView = null;
-    public String FILE_NAME = "fileDemo.txt";
+    //public String FILE_NAME = "fileDemo.txt";
 
 
     private String str = "";//保存数字
@@ -71,11 +71,11 @@ public class MainActivity extends Activity {
 
         errorzero = findViewById(R.id.errorzero);
         resultText = findViewById(R.id.resultText);
-        writeButton = findViewById(R.id.writeButton);
-        readButton = findViewById(R.id.readButton);
+       // writeButton = findViewById(R.id.writeButton);
+        //readButton = findViewById(R.id.readButton);
         textView = findViewById(R.id.textView);
         displayView = findViewById(R.id.displayView);
-        appendBox = findViewById(R.id.appendBox);
+//        appendBox = findViewById(R.id.appendBox);
 
         btn0 = findViewById(R.id.zero);
         btn1 = findViewById(R.id.one);
@@ -115,8 +115,8 @@ public class MainActivity extends Activity {
 
         btndot.setOnClickListener(listener);
 
-        writeButton.setOnClickListener(writelistener);
-        readButton.setOnClickListener(readlistener);
+//        writeButton.setOnClickListener(writelistener);
+//        readButton.setOnClickListener(readlistener);
 
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -200,66 +200,66 @@ public class MainActivity extends Activity {
         }
     };
 
-    private OnClickListener writelistener = new OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            //textView.setText("");
-
-            FileOutputStream fos = null;
-            try {
-                if (appendBox.isChecked()) {
-                    fos = openFileOutput(FILE_NAME, Context.MODE_APPEND);
-                } else {
-                    fos = openFileOutput(FILE_NAME, Context.MODE_PRIVATE);
-                }
-                String text = resultText.getText().toString();
-                fos.write(text.getBytes());
-                textView.setText("文件写入成功，写入长度：" + text.length());
-                //resultText.setText("");
-
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            finally {
-                if (fos != null)
-                    try {
-                        fos.flush();
-                        fos.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-            }
-        }
-    };
-    private OnClickListener readlistener = new OnClickListener() {
-        @Override
-        public void onClick(View view) {
-
-            displayView.setText("");
-            FileInputStream fis = null;
-            try {
-                fis = openFileInput(FILE_NAME);
-                if (fis.available() == 0) {
-                    return;
-                }
-                byte[] readBytes = new byte[fis.available()];
-                while (fis.read(readBytes) != -1) {
-
-                }
-                String text = new String(readBytes);
-                displayView.setText(text);
-                textView.setText("文件读取成功，写入长度：" + text.length());
-
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
-    };
+//    private OnClickListener writelistener = new OnClickListener() {
+//        @Override
+//        public void onClick(View view) {
+//            //textView.setText("");
+//
+//            FileOutputStream fos = null;
+//            try {
+//                if (appendBox.isChecked()) {
+//                    fos = openFileOutput(FILE_NAME, Context.MODE_APPEND);
+//                } else {
+//                    fos = openFileOutput(FILE_NAME, Context.MODE_PRIVATE);
+//                }
+//                String text = resultText.getText().toString();
+//                fos.write(text.getBytes());
+//                textView.setText("文件写入成功，写入长度：" + text.length());
+//                //resultText.setText("");
+//
+//            } catch (FileNotFoundException e) {
+//                e.printStackTrace();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            finally {
+//                if (fos != null)
+//                    try {
+//                        fos.flush();
+//                        fos.close();
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//            }
+//        }
+//    };
+//    private OnClickListener readlistener = new OnClickListener() {
+//        @Override
+//        public void onClick(View view) {
+//
+//            displayView.setText("");
+//            FileInputStream fis = null;
+//            try {
+//                fis = openFileInput(FILE_NAME);
+//                if (fis.available() == 0) {
+//                    return;
+//                }
+//                byte[] readBytes = new byte[fis.available()];
+//                while (fis.read(readBytes) != -1) {
+//
+//                }
+//                String text = new String(readBytes);
+//                displayView.setText(text);
+//                textView.setText("文件读取成功，写入长度：" + text.length());
+//
+//            } catch (FileNotFoundException e) {
+//                e.printStackTrace();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//
+//        }
+//    };
 
     private void dot() {
         // TODO Auto-generated method stub

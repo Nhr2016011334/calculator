@@ -180,33 +180,33 @@
                 android:layout_below="@id/zero"
                 android:text="@string/dot"
                 android:textSize="40sp" />
-            <Button
-                android:id="@+id/writeButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_below="@id/dot"
-                android:text="@string/write"
-                android:textSize="40sp" />
-            <Button
-                android:id="@+id/readButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_below="@id/dot"
-                android:text="@string/read"
-                android:textSize="40sp" />
+            <!--<Button-->
+                <!--android:id="@+id/writeButton"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_below="@id/dot"-->
+                <!--android:text="@string/write"-->
+                <!--android:textSize="40sp" />-->
+            <!--<Button-->
+                <!--android:id="@+id/readButton"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_below="@id/dot"-->
+                <!--android:text="@string/read"-->
+                <!--android:textSize="40sp" />-->
 
-            <CheckBox
-                android:id="@+id/appendBox"
-                android:text="@string/appendBox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_toLeftOf="@+id/divide"
-                android:layout_toStartOf="@+id/divide"
-                android:layout_marginBottom="12dp"
-                />
+            <!--<CheckBox-->
+                <!--android:id="@+id/appendBox"-->
+                <!--android:text="@string/appendBox"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_toLeftOf="@+id/divide"-->
+                <!--android:layout_toStartOf="@+id/divide"-->
+                <!--android:layout_marginBottom="12dp"-->
+                <!--/>-->
 
         </RelativeLayout>
 
