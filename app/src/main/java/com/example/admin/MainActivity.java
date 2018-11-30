@@ -2,18 +2,18 @@ package com.example.admin;
 
 
 import android.app.Activity;
-import android.content.Context;
+//import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.CheckBox;
+//import android.widget.CheckBox;
 import android.widget.EditText;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+//import java.io.FileInputStream;
+//import java.io.FileNotFoundException;
+//import java.io.FileOutputStream;
+//import java.io.IOException;
 
 public class MainActivity extends Activity {
     /**
@@ -186,7 +186,7 @@ public class MainActivity extends Activity {
                     if (!errBoolean && flagBoolean) {
                         output.setText(String.valueOf(result));
                     }
-                    resultText.setText(strold + act + str + "=" + result+"                          ");
+                    resultText.setText(strold + act + str + "=" + result+"");
                     break;
 
                 default:
